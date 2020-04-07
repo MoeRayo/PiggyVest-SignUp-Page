@@ -1,0 +1,267 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body {
+    background-color: #062863;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+h2{
+    font-family: 'Didact Gothic', sans-serif;
+    color: #083E9E;
+
+}
+p,label,a,button{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header,h2,p{
+    text-align: center;
+}
+p{
+    color: gray;
+}
+main{
+    overflow: hidden;
+}
+
+/* images */
+.circle,.greenjay,.redjay,.arrow{
+    position: fixed;
+}
+.circle{
+    top: -83px;
+    left: -15px;
+}
+.greenjay{
+    right: -110px;
+    top: -5px;
+}
+.redjay{
+    bottom: -57px;
+    left: -70px;
+}
+.arrow{
+    right: -85px;
+    bottom: -25px;
+}
+
+/* wrapper */
+.wrapper{
+    width: 28.5%;
+    margin: 0 auto ;
+    padding: 3.3rem 0 1rem 0;
+}
+
+/* form */
+form{
+    position: relative;
+    margin: 3rem 0 2rem 0;
+    padding: 2.5rem 2.5rem 2rem;
+    background-color: #ffffff;
+    border-radius: 1.2rem 1.2rem 1.2rem 0;
+}
+form p{
+    padding-bottom: 2.5rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+label{
+    display: block;
+    color: #4A5568;
+    font-size: .75rem;
+    font-weight: bold;
+}
+input,select,button{
+    display: block;
+    width: 100%;
+    padding: 1.1rem .8rem;
+    border: none;
+    background-color: #EDF2F7;
+    margin: .5rem 0 2rem 0;
+    border-radius: 5px;
+    color: #033d777a;
+    font-size: .9rem;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+    -ms-word-break: normal;
+    word-break: normal;
+    color: black;
+}
+form:after{
+    content: '\f078';
+    font: normal normal normal 17px/1 FontAwesome;
+    color:#4a91d865;
+    right: 60px;
+    bottom: 178px;
+    padding: 0px 0px 0px 8px;
+    border-left: 1px solid #4a91d865;
+    position: absolute;
+    pointer-events: none;
+}
+.form::-ms-expand{
+    display: none;
+}
+option{
+    background-color: #ffffff;
+    color: #333131;
+}
+
+/* button */
+button{
+    background-color: rgb(10, 60, 151);
+    color: #ffffff;
+    border-radius: 1rem 1rem 1rem 0;
+    text-transform: uppercase;
+    padding: 1.3rem .8rem;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+button:hover{
+    background-color: #062B6F;
+}
+
+/* hidden images */
+.circle2,.greenjay2,.greenjay3,.redjay2,.arrow2,.arrow3{
+    display: none;
+}
+
+/* responsiveness */
+@media screen and (max-width:497px) and (min-width:400px) {
+    .wrapper{
+        width:90%;
+    }
+    .circle,.greenjay,.redjay,.arrow{
+        display: none;
+    }
+    .greenjay3{
+        position: fixed;
+        display:unset;
+        right: -40px;
+        top: -20px;
+    }
+    .arrow3{
+        position: fixed;
+        display:unset;
+        right: -30px;
+        bottom: -30px;
+    }
+}
+@media screen and (max-width:700px) and (min-width:497px) {
+    .wrapper{
+        width:80%;
+    }
+    .circle,.greenjay,.redjay,.arrow{
+        display: none;
+    }
+    .greenjay3{
+        position: fixed;
+        display:unset;
+        right: -25px;
+        top: -20px;
+    }
+    .redjay2{
+        position: fixed;
+        display:unset;
+        bottom: -90px;
+        left: -60px;
+    }
+    .arrow3{
+        position: fixed;
+        display:unset;
+        right: -20px;
+        bottom: -20px;
+    }
+}
+@media screen and (max-width:800px) and (min-width:700px) {
+    .wrapper{
+        width: 65%;
+    }
+    .circle,.greenjay,.redjay,.arrow{
+        display: none;
+    }
+    .greenjay2{
+        position: fixed;
+        display:unset;
+        right: -60px;
+        top: -20px;
+    }
+    .redjay2{
+        position: fixed;
+        display:unset;
+        bottom: -60px;
+        left: -70px;
+    }
+    .arrow2{
+        position: fixed;
+        display:unset;
+        right: -70px;
+        bottom: -30px;
+    }
+}
+@media screen and (max-width:950px) and (min-width:800px) {
+    .wrapper{
+        width:50%;
+        margin: 0 auto ;
+        padding: 3.5rem 0 2rem 0;
+    }
+    .circle,.greenjay,.redjay,.arrow{
+        display: none;
+    }
+    .circle2{
+        position: fixed;
+        display: unset;
+        top: -70px;
+        left: -15px;
+    }
+    .greenjay2{
+        position: fixed;
+        display:unset;
+        right: -60px;
+        top: -20px;
+    }
+    .redjay2{
+        position: fixed;
+        display:unset;
+        bottom: -60px;
+        left: -70px;
+    }
+    .arrow2{
+        position: fixed;
+        display:unset;
+        right: -70px;
+        bottom: -30px;
+    }
+    
+}
+@media screen and (max-width:1350px) and (min-width:950px) {
+    .wrapper{
+        width:40%;
+    }
+    .circle{
+        top: -100px;
+    }
+    .greenjay{
+        right: -120px;
+        top: -10px;
+    }
+    .arrow{
+        right: -75px;
+        bottom: -30px;
+    }
+}
+
+
+
