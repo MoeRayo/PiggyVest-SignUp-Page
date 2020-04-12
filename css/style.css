@@ -139,9 +139,9 @@ button:hover{
 }
 
 /* responsiveness */
-@media screen and (max-width:497px) and (min-width:400px) {
+@media (max-width:497px) {
     .wrapper{
-        width:90%;
+        width:85%;
     }
     .circle,.greenjay,.redjay,.arrow{
         display: none;
@@ -157,6 +157,17 @@ button:hover{
         display:unset;
         right: -30px;
         bottom: -30px;
+    }
+    form{
+        padding: 2.5rem 1.8rem 2rem;
+       
+    }
+    form h2{
+        font-size: 1.3rem;
+    }
+    form p{
+        padding-top: .3rem;
+        font-size: .75rem;
     }
 }
 @media screen and (max-width:700px) and (min-width:497px) {
